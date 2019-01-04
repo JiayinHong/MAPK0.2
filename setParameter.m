@@ -40,7 +40,7 @@ switch model_name
         param.KO1 = 0.01;
         
     case 'dox_NleE'
-        param.NleE = 8;
+        param.NleE = 8 /2;
         param.kout = 1;
         param.KO2 = 0.01;
         
@@ -68,9 +68,9 @@ switch model_name
     case 'ci_NleE'
         param.kout = 10;
         param.KO2 = 0.5;
-        param.aNleE = 0.02;
+        param.aNleE = 0.02 *3;
         param.Knode2 = 0.3;
-        param.gamma3 = 0.003;
+        param.gamma3 = 0.003 *2;
         
     case 'None_ctrl'
         % do nothing, the default set
